@@ -1,4 +1,4 @@
-# The Hacker theme
+# Daily Plot
 
 ![Plot of Arxiv articles](daily_plot.png)
 
