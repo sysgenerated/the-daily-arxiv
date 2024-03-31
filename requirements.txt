@@ -1,0 +1,8 @@
+feedparser==6.0
+pandas==2.2
+python-dotenv
+google-generativeai==0.4
+mistralai==0.1.6
+numpy==1.26
+umap==0.5
+hdbscan==0.8
