@@ -1,3 +1,4 @@
+Cython
 feedparser==6.0
 pandas==2.2
 python-dotenv
