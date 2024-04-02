@@ -44,6 +44,11 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
+      - name: Run Python script (cluster articles)
+        run: |
+          cd scripts
+          python 3_cluster_daily_articles.py
+
       - name: Configure git user (optional)
         run: |
           git config --global user.name "GitHub Actions"
