@@ -20,11 +20,11 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          lfs: true
+#        with:
+#          lfs: true
       
-      - name: Checkout LFS objects
-        run: git lfs checkout
+#      - name: Checkout LFS objects
+#        run: git lfs checkout
 
       - name: Set up Python environment
         uses: actions/setup-python@v5
@@ -49,10 +49,10 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-      - name: Run Python script (cluster articles)
-        run: |
-          cd scripts
-          python 3_cluster_daily_articles.py
+#      - name: Run Python script (cluster articles)
+#        run: |
+#          cd scripts
+#          python 3_cluster_daily_articles.py
 
       - name: Configure git user (optional)
         run: |
