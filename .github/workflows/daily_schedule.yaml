@@ -20,6 +20,11 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          lfs: true
+      
+      - name: Checkout LFS objects
+        run: git lfs checkout
 
       - name: Set up Python environment
         uses: actions/setup-python@v5
